@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Шапка */
+
+header {
+    background-image: url('/img/header-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 614px;
+    max-width: 1920px;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    padding-top: 23px;
+    padding-left: 4px;
+}
+.header__logo img {
+    width: 215px;
+}
+.header__content {
+    max-width: 542px;
+    padding-top: 49px;
+    padding-left: 4px;
+}
+.header__content__h1 {
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 52.5px;
+    color: #313131;
+    line-height: 111%;
+}
+.header__content__h1 span:nth-child(2) {
+    padding-left: 80px;
+}
+.header__content__h1 span:nth-child(3) {
+    padding-left: 30px;
+}
+.header__content__p {
+    font-family: 'Golos Text', serif;
+    text-align: center;
+    margin-top: 1.4rem;
+    margin-left: -3.9rem;
+    font-size: 15.5px;
+    letter-spacing: 0.2px;
+    line-height: 130%;
+}
+.header__content__flex {
+    display: flex;
+    gap: 0.9rem;
+    margin-top: 2.1rem;
+}
+.header__content__flex__button {
+    width: 14.4rem;
+    height: 4rem;
+    border-radius: 35px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding-inline: 2rem;
+    font-family: 'Golos Text', serif;
+    font-size: 14px;
+    line-height: 130%;
+}
+.button-black:hover {
+    background-color: #FBCE51;
+    color: black;
+}
+.button-transparent {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    font-weight: 600;
+}
+.button-transparent:hover {
+    background: #000;
+    color: #fff;
+    font-weight: normal;
+}
+/* Бегущая строка */
+.marquee {
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    background-color: #F54932;
+}
+.marquee__p {
+    color: #ffffff;
+    text-transform: uppercase; 
+    font-family:'Merriweather', serif; 
+    font-weight: lighter; 
+    font-size: 19px; 
+    line-height: 110%; 
+    padding-block: 16px;
+    white-space: nowrap;
+    width: 100%;
+    animation: marquee-text 10s linear infinite;
+}
+@keyframes marquee-text {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/* О нас */
+.about__content {
+    padding-top: 5.9rem;
+    padding-left: 0.3rem;
+}
+.about__content__h1 {
+    margin-top: 1px;
+    position: relative;
+    text-transform: uppercase;
+    width: 65%;
+    font-family: 'Merriweather', serif;
+    font-size: 31.5px;
+    font-weight: 400;
+    line-height: 135%;
+}
+.about__content__h1 span {
+    color: #F54932;
+    font-weight: bold;
+}
+.about__content__h1__img {
+    position: absolute;
+    top: -1.5rem;
+    right: -23.2rem;
+    max-width: 345px;
+}
+.about__content2 {
+    display: flex;
+    margin-top: 2.4rem;
+    margin-left: -1.3rem;
+}
+.about__content2__img {
+    max-width: 465px;
+}
+.about__content2 h1 {
+    margin-top: 2.7rem;
+    margin-left: 0.9rem;
+    width: 94%;
+}
+.about__content2__table {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2.4rem;
+    padding-left: 0.9rem;
+    font-family:'Golos Text', serif;
+    font-weight: 500;
+    font-size: 17.7px;
+}
+.about__content2_p {
+    color: #31313190;
+    border-bottom: 2px solid #D0D0D0;
+    padding-top: 0.82rem;
+    padding-bottom: 0.82rem;
+    width: 16.9rem;
+    border-right: 2px solid #D0D0D0;
+    letter-spacing: -0.15px;
+}
+.about__content2_pb {
+    font-weight: 700;
+    padding-top: 0.82rem;
+    padding-left: 0.73rem;
+    letter-spacing: -0.25px;
+    border-bottom: 2px solid #D0D0D0;
+    width: 21.8rem;
+    position: relative;
+}
+.about__content2_pb:last-child:after {
+    content: '';
+    position: absolute;
+    top: 1.6rem;
+    left: 0.7rem;
+    width: 74px;
+    height: 2px;
+    background-color: #F54932;
+}
+.about__content2_p:nth-child(9) {
+    border-bottom: none;
+}
+.about__content2_pb:last-child {
+    border-bottom: none;
+}
+.about__p {
+    color: #3057A2;
+    font-family:'Golos Text', serif;
+    font-weight: 500;
+    font-size: 17.7px;
+    margin-top: 1.9rem;
+    margin-left: 0.9rem;
+    letter-spacing: -0.17px;
+}
+/* Этапы */
+.steps {
+    padding-top: 9.2rem;
+}
+.steps__title {
+    position: relative;
+}
+.steps__title__h1 {
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 47.5px;
+    color: #313131;
+    line-height: 118%;
+    width: 70%;
+    padding-left: 0.2rem;
+}
+.steps__title__p {
+    color: #3057A2;
+    font-family:'Golos Text', serif;
+    font-weight: 500;
+    font-size: 17.7px;
+    margin-top: 1.9rem;
+    margin-left: 0.9rem;
+    letter-spacing: -0.13px;
+    width: 20%;
+    position: absolute;
+    top: 1.9rem;
+    left: 15.8rem;
+}
+.steps__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 98px 98px 120px;
+    column-gap: 0.9rem;
+    row-gap: 1.1rem;
+    padding-top: 3rem;
+    padding-right: 0.2rem;
+    position: relative;
+}
+.steps__grid__item {
+    background-image: url('/img/steps-bg.jpg');
+    
+    margin-left: 0.2rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    padding-left: 1.1rem;
+    display: flex;
+}
+.grid-3 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.grid-7 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+.grid-7 p {
+    width: 55%;
+}
+.steps__grid__item span {
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    padding-inline: 10px;
+    padding-top: 4px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    font-family: 'Golos Text', serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.steps__grid__p {
+    color: #313131;
+    font-family:'Golos Text', serif;
+    font-weight: 500;
+    font-size: 17.7px;
+    margin-left: 0.9rem;
+    letter-spacing: -0.13px;
+    width: 80%;
+}
+.steps__grid__img {
+    position: absolute;
+    width: 22rem;
+    top: 12.1rem;
+    right: -3.2rem;
+}
+.steps__buttons {
+    display: none;
+    margin-inline: auto;
+    width: 15rem;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.circle {
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: #6a6a6a;
+    border-radius: 50%;
+}
+/* Участники */
+.team__title {
+    margin-top: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.team__title__item {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin-right: 0.3rem;
+}
+.team__title__h1 {
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 47.5px;
+    color: #313131;
+    line-height: 118%;
+    width: 70%;
+    padding-left: 0.2rem;
+}
+.team__title__button {
+    width: 2.4rem;
+}
+.team__title__p {
+    font-family: 'Golos Text', serif;
+    font-size: 0.9rem;
+    letter-spacing: -0.5px;
+    padding-bottom: 0.3rem;
+}
+.team__carousel {
+    margin-top: 3.3rem;
+    padding-left: 2.3rem;
+    display: flex;
+    overflow-x: hidden;
+    gap: 5.2rem;
+}
+.team__carousel__item {
+    width: 17.5rem;
+}
+.team_end {
+    order: 1;
+}
+.team__carousel__item__img {
+    width: 17.5rem;
+}
+.team__carousel__item__h2 {
+    font-family: 'Golos Text', serif;
+    font-weight: semibold;
+    font-size: 1.3rem;
+    color: #313131;
+    text-align: center;
+    padding-top: 1.3rem;
+}
+.team__carousel__item__p {
+    font-family: 'Golos Text', serif;
+    font-size: 1.1rem;
+    color: #31313190;
+    text-align: center;
+    padding-top: 0.35rem;
+}
+.team__carousel__item__button {
+    font-family: 'Golos Text', serif;
+    font-size: 0.9rem;
+    display: block;
+    margin-inline: auto;
+    padding: 0.35rem 0.55rem;
+    border: 1px solid #3057A2;
+    color: #3057A2;
+    border-radius: 14px;
+    background-color: transparent;
+    margin-top: 1.1rem;
+}
+/* Бегущая строка внизу */
+.marqueebottom {
+    margin-top: 7.65rem;
+}
+/* Подвал */
+footer {
+    background-color: #E9DED4;
+}
+.footer__p {
+    font-family: 'Golos Text', serif;
+    font-size: 0.9rem;
+    letter-spacing: -0.19px;
+    color: #31313190;
+    padding: 2.25rem 0.2rem 3.9rem;
+    line-height: 115%;
+}
+
+@media screen and (max-width: 1900px) {
+    .marquee {
+        display: flex;
+        width: 100%;
+        overflow-x: hidden;
+        background-color: #F54932;
+    }
+    .marquee__p:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .container {
+        max-width: 850px;
+    }
+    .about__content__h1__img {
+        right: -18.2rem;
+    }
+    .about__content2__img {
+        max-width: none; 
+    }
+    .about__content2_p {
+        border-right: none;
+        border-bottom: none;
+    }
+    .about__content2_pb {
+        padding-left: 0;
+    }
+    .marquee {
+        overflow-x: hidden;
+    }
+    .steps__title__p {
+        position: static;
+        width: 100%;
+    }
+    .steps__grid {
+        grid-template-columns: repeat(5, 20rem);
+        grid-template-rows: 150px 150px;
+        column-gap: 4rem;
+        row-gap: 0;
+        padding-top: 10rem;
+        padding-right: 0.2rem;
+        width: 40rem;
+        margin-inline: auto;
+    }
+    .steps .container {
+        overflow-x: hidden;
+    }
+    .grid-2 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .grid-3 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .grid-4 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    .grid-5 {
+        grid-column-start: 3;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+    .grid-6 {
+        grid-column-start: 4;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .grid-7 {
+        grid-column-start: 5;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .steps__grid__img {
+        top: 5%;
+        left: 25%;
+    }
+    .steps__grid__item {
+        padding-block: 3rem;
+    }
+    .steps__buttons {
+        display: flex;
+    }
+    
+}
+@media screen and (max-width: 850px) {
+    .about__content2__img {
+        width: 50%;
+        height: fit-content;
+    }
+    .container {
+        max-width: none;
+        padding-inline: 3vw;
+    }
+    .about__content__h1__img {
+        position: static;
+    }
+}
+@media screen and (max-width: 800px) {
+    .about__content__h1 {
+        width: 100%;
+    }
+    .about__content2 {
+        display: block;
+        margin-inline: 0;
+    }
+    .about__content2__img {
+        width: 90vw;
+        height: fit-content;
+        display: block;
+    
+    }
+    .steps__grid {
+        max-width: 300px;
+        column-gap: 15rem;
+    }
+    .team__carousel {
+        max-width: 350px;
+        margin-inline: 0;
+    }
+    .team {
+        text-align: center;
+        position: relative;
+    }
+    .team__title {
+        display: block;
+        margin-inline: 0;
+    }
+    .team__title__h1 {
+        display: block;
+        margin-inline: 0;
+    }
+    .team__title__item {
+        position: absolute;
+        top: 105%;
+        left: 20%;
+    }
+}
+@media screen and (max-width: 510px) {
+    header {
+        height: 100vh;
+        background-image: url('/img/header-bg-2.png');
+        background-position: center;
+        
+    }
+    .container {
+        max-width: none;
+        padding-inline: 4vw;
+    }
+    .header__content__h1 {
+        font-size: 46px;
+    }
+    .header__content__p {
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 0;
+        text-align: left;
+    }
+    .header__content__flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__content__flex__button {
+        width: 90vw;
+        font-size: 18px;
+    }
+    .button-transparent {
+        background-color: #fff;
+    }
+}
+@media screen and (max-width: 415px) {
+    .header__content__h1 {
+        font-size: 36px;
+    }
+    .header__content__flex__button {
+        width: 90vw;
+        font-size: 16px;
+    }
+    .about__content {
+        padding-top: 3rem;
+    }
+    .steps__title__h1 {
+        font-size: 36px;
+    }
+    .steps__grid__img {
+        top: 5%;
+        left: 5%;
+    }
+    .steps__grid {
+        column-gap: 3rem;
+        position: static;
+    }
+    .steps {
+        position: relative;
+    }
+    .grid-7 p {
+        width: 80%;
+    }
+    .team__title__h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+    .team__title {
+        margin-top: 5rem;
+    }
+    .team__title__item {
+        left: 30%;
+    }
+} 
