@@ -608,7 +608,6 @@ footer {
     }
     .steps__grid {
         column-gap: 3rem;
-        position: static;
     }
     .steps {
         position: relative;
