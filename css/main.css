@@ -9,7 +9,7 @@
 /* Шапка */
 
 header {
-    background-image: url('/img/header-bg.jpg');
+    background-image: url('../img/header-bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -248,7 +248,7 @@ header {
     position: relative;
 }
 .steps__grid__item {
-    background-image: url('/img/steps-bg.jpg');
+    background-image: url('../img/steps-bg.jpg');
     
     margin-left: 0.2rem;
     padding-top: 1.1rem;
@@ -559,7 +559,7 @@ footer {
 @media screen and (max-width: 510px) {
     header {
         height: 100vh;
-        background-image: url('/img/header-bg-2.png');
+        background-image: url('../img/header-bg-2.png');
         background-position: center;
         
     }
